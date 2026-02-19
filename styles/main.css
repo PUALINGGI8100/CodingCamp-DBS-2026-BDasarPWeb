@@ -1,0 +1,6 @@
+main {
+    min-height: 85vh;
+    max-height: 85vh;
+    background-color: red;
+    padding: .1rem;
+}

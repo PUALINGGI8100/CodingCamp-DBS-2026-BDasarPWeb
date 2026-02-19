@@ -1,0 +1,18 @@
+@import url("/styles/header.css");
+@import url("/styles/main.css");
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --text-primary: rgb(24, 62, 138);
+    --text-primary-hover: rgb(253, 253, 253);
+    --primary-blue: rgb(158, 216, 255);
+    --primary-blue-hover: rgb(79, 184, 255);
+}
+
+/* body { position: relative; } */
+a { text-decoration: unset !important; }
