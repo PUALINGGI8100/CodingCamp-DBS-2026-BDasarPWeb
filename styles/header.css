@@ -2,7 +2,7 @@
 header {
     position: sticky;
     top: 0;
-    background-color: whitesmoke;
+    background-color: white;
 }
 header nav{
     display: flex;

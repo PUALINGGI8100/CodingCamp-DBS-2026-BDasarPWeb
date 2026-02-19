@@ -1,6 +1,27 @@
 main {
     min-height: 85vh;
     max-height: 85vh;
-    background-color: red;
+    /* background-color: red; */
     padding: .1rem;
+    display: flex;
+}
+
+main #content {
+    flex-grow: 1;
+    background-color: aqua;
+}
+
+main aside {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: center;
+    align-self: center;
+    height: max-content;
+    border-radius: .5rem;
+}
+main aside a:hover {
+    scale: 95%;
 }
