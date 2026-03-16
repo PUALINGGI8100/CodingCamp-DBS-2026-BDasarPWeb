@@ -1,18 +1,40 @@
-@import url("/styles/header.css");
-@import url("/styles/main.css");
+@import url("styles/header.css");
+@import url("styles/main.css");
+@import url("styles/footer.css");
 
 *,
 *::after,
 *::before {
     box-sizing: border-box;
+    margin: 0;
 }
 
 :root {
-    --text-primary: rgb(24, 62, 138);
+    --border-primary: rgb(211, 211, 211);
+    --text-primary: rgb(59, 59, 59);
     --text-primary-hover: rgb(253, 253, 253);
-    --primary-blue: rgb(158, 216, 255);
-    --primary-blue-hover: rgb(79, 184, 255);
+    --btn-primary: rgb(185, 255, 246);
+    --btn-primary-hover: rgb(112, 248, 230);
+    --bg-secondary: rgb(198, 255, 255);
+    --default-gap: 1rem;
 }
 
-/* body { position: relative; } */
+body { position: relative; }
 a { text-decoration: unset !important; }
+h1, h2, h3, h4, h5, p { color: var(--text-primary); }
+.row {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(12, 1fr);
+}
+.col-span-1 { grid-column: span 1; }
+.col-span-2 { grid-column: span 2; }
+.col-span-3 { grid-column: span 3; }
+.col-span-4 { grid-column: span 4; }
+.col-span-6 { grid-column: span 6; }
+.col-span-12 { grid-column: span 12; }
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: var(--default-gap);
+}

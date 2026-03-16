@@ -1,0 +1,14 @@
+footer {
+    position: static;
+    bottom: 0;
+    min-height: 10vh;
+    max-height: 10vh;
+    margin: 0;
+    padding: 2rem;
+    background-color: var(--border-primary);
+}
+
+footer p { font-size: large; text-align: center; }
+@media only screen and (max-width: 600px) {
+    footer p { text-align: left; }
+}
